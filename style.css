@@ -1,3 +1,13 @@
+:root {
+  --BG_C: #72736f;
+  --bg_c: #262522;
+  --font_c: #ecc100;
+}
+
+body {
+  background-color: var(--BG_C);
+}
+
 .wrapper {
   width: 94%;
   max-width: 1400px;
@@ -7,9 +17,10 @@
 }
 .main {
   width: calc(100% - 250px);
-  background-color: #f0f0f0;
+  background-color: var(--bg_c);
   padding: 20px;
   font-family: "Kiwi Maru", serif;
+  color: var(--font_c);
 }
 .sidebar {
   width: 180px;
@@ -20,7 +31,30 @@
 .widget--sticky {
   position: sticky;
   top: 20px;
-  background-color: #f0f0f0;
+  background-color: var(--bg_c);
   padding: 20px;
   font-family: "Kiwi Maru", serif;
+  color: var(--font_c);
+}
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: var(--font_c);
+}
+
+a:visited {
+  color: var(--font_c);
+}
+
+a:hover {
+  font-weight: bold;
+  color: #0011ff;
+  text-decoration: underline;
+}
+
+a:active {
+  font-weight: bold;
+  color: #33cc00;
 }
